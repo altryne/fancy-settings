@@ -9,7 +9,7 @@ Settings can be of different types: text input, checkbox, slider, etc. Some "set
 
 Settings are defined in the manifest.js file as JavaScript objects. Each setting is defined by specifying a number of parameters. All types of settings are configured with the string parameters tab, group, name and type.
 
-###Basic example:
+### Basic example:
 ```javascript
 {
     "tab": "Tab 1",
@@ -22,9 +22,9 @@ Settings are defined in the manifest.js file as JavaScript objects. Each setting
 "name" is used as a part of the key when storing the setting's value in localStorage. 
 If it's missing, nothing will be saved.
 
-###Additionally, all types of settings are configured with their own custom parameters:
+### Additionally, all types of settings are configured with their own custom parameters:
 
-###Description ("type": "description")
+### Description ("type": "description")
 
 text (string) the block of text, which can include HTML tags. You can continue multiple lines of text by putting a \ at the end of a line, just as with any JavaScript file.
 
@@ -36,7 +36,7 @@ Button ("type": "button")
  Text (string) text shown on the button
 ```
 
-####Text ("type": "text")
+#### Text ("type": "text")
 ```
  label (string) text shown in front of the text field
 
@@ -45,12 +45,12 @@ Button ("type": "button")
  masked (boolean) indicates a password field
 ```
 
-####Checkbox ("type": "checkbox")
+#### Checkbox ("type": "checkbox")
 ```
  label (string) text shown behind the checkbox
 ```
 
-####Slider ("type": "slider")
+#### Slider ("type": "slider")
 ```
  label (string) text shown in front of the slider
 
@@ -65,7 +65,7 @@ Button ("type": "button")
  displayModifier (function) a function to modify the value shown in the display
 ```
 
-####PopupButton ("type": "popupButton"), ListBox ("type": "listBox") & RadioButtons ("type": "radioButtons")
+#### PopupButton ("type": "popupButton"), ListBox ("type": "listBox") & RadioButtons ("type": "radioButtons")
 ```
 label (string) text shown in front of the options
 
@@ -74,7 +74,7 @@ label (string) text shown in front of the options
  where an option can be one of the following formats:
 ```
 
-####"value"
+#### "value"
 ```
 ["value", "displayed text"]
 
